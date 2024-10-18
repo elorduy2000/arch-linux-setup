@@ -24,7 +24,13 @@ echo ">>> Copying config files..."
 #    cp -r ~/Downloads/arch-linux-setup/.config/ ~/.config/
 echo ""
 
-echo ">>> Changing console font..."    
+echo ">>> Configurando bash..."
+    mv ~/.bashrc ~/.bashrc.backup
+    cp ~/Downloads/arch-linux-setup/dotfiles/bash/.bashrc ~/.bashrc
+    source .bashrc
+echo ""
+
+echo ">>> Changing console font..."
     sudo pacman -S --noconfirm --needed terminus-font
     sudo mv /etc/vconsole.conf /etc/vconsole.conf.backup
     sudo cp ~/Downloads/arch-linux-setup/dotfiles/console/vconsole.conf /etc/vconsole.conf
