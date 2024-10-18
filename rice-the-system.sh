@@ -31,13 +31,8 @@ echo ">>> Changing console font..."
     setfont ter-u22n
 echo ""
 
-echo ">>> Configuring Grub..."
-    sudo mv /etc/default/grub /etc/default/grub.backup
-    sudo cp ~/Downloads/arch-linux-setup/dotfiles/grub/grub /etc/default/grub
-    sudo grub-mkconfig -o /boot/grub/grub.cfg
-echo ""
-
 echo ">>> Beautifying shell..."
+    sudo pacman -S --noconfirm --needed tree
     sudo pacman -S --noconfirm --needed eza
     sudo pacman -S --noconfirm --needed starship
     sudo pacman -S --noconfirm --needed btop
