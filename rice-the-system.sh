@@ -26,7 +26,7 @@ echo ""
 
 echo ">>> Configurando bash..."
     mv ~/.bashrc ~/.bashrc.backup
-    cp ~/Downloads/arch-linux-setup/dotfiles/bash/.bashrc ~/.bashrc    
+    cp ~/Downloads/arch-linux-setup/dotfiles/bash/.bashrc ~/.bashrc
 echo ""
 
 echo ">>> Changing console font..."
@@ -45,7 +45,7 @@ echo ">>> Beautifying shell..."
     sudo pacman -S --noconfirm --needed yazi 
 
     sudo pacman -S --noconfirm --needed starship
-    source .bashrc
+#    source .bashrc
 echo ""
 
 echo ""
