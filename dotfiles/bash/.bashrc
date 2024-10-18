@@ -7,9 +7,9 @@
 
 alias grep='grep --color=auto'
 alias l='eza -lh'
-alias ls="eza -lha"
 alias ll="eza -lha"
 alias tree="tree -C"
+alias cdhome="cd ~"
 
 PS1='[\u@\h \W]\$ '
 
