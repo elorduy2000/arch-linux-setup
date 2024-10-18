@@ -20,13 +20,22 @@ echo ">>> Ensuring folders..."
 echo ""
 
 echo ">>> Copying config files..."
+    # backgrounds
     cp -r ~/Downloads/arch-linux-setup/Backgrounds/* ~/Backgrounds/
-#    cp -r ~/Downloads/arch-linux-setup/.config/ ~/.config/
+
+    # wallpapers
+    cp -r ~/Downloads/arch-linux-setup/Wallpapers/* ~/Wallpapers/
+
+    # bash
+    mv ~/.bashrc ~/.bashrc.backup
+    cp ~/Downloads/arch-linux-setup/dotfiles/bash/.bashrc ~/.bashrc
+
+    # dotfiles
+    cp -r ~/Downloads/arch-linux-setup/.config/* ~/.config/
 echo ""
 
 echo ">>> Configurando bash..."
-    mv ~/.bashrc ~/.bashrc.backup
-    cp ~/Downloads/arch-linux-setup/dotfiles/bash/.bashrc ~/.bashrc
+
 echo ""
 
 echo ">>> Changing console font..."
@@ -36,16 +45,15 @@ echo ">>> Changing console font..."
     setfont ter-u22n
 echo ""
 
-echo ">>> Beautifying shell..."
+echo ">>> Installing programs..."
     sudo pacman -S --noconfirm --needed tree
     sudo pacman -S --noconfirm --needed eza
     sudo pacman -S --noconfirm --needed btop
     sudo pacman -S --noconfirm --needed htop 
     sudo pacman -S --noconfirm --needed fzf 
     sudo pacman -S --noconfirm --needed yazi 
-
     sudo pacman -S --noconfirm --needed starship
-#    source .bashrc
+    sudo pacman -S --noconfirm --needed kitty
 echo ""
 
 echo ""
