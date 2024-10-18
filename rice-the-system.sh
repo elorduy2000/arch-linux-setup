@@ -19,15 +19,16 @@ echo ">>> Ensuring folders..."
     mkdir -pv ~/.config
 echo ""
 
+echo ">>> Copying config files..."
+    cp -r ~/Downloads/arch-linux-setup/Backgrounds/* ~/Backgrounds/
+#    cp -r ~/Downloads/arch-linux-setup/.config/ ~/.config/
+echo ""
+
 echo ">>> Changing console font..."    
     sudo pacman -S --noconfirm --needed terminus-font
     sudo mv /etc/vconsole.conf /etc/vconsole.conf.backup
     sudo cp ~/Downloads/arch-linux-setup/dotfiles/console/vconsole.conf /etc/vconsole.conf
     setfont ter-u22n
-echo ""
-
-echo ">>> Copying config files..."
-    cp -r ~/Downloads/arch-linux-setup/.config/* ~/.config/
 echo ""
 
 echo ">>> Beautifying shell..."
