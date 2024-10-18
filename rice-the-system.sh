@@ -20,17 +20,10 @@ echo ">>> Ensuring folders..."
 echo ""
 
 echo ">>> Changing console font..."    
-    sudo pacman -S terminus-font
+    sudo pacman -S --noconfirm --needed terminus-font
     sudo mv /etc/vconsole.conf /etc/vconsole.conf.backup
     sudo cp ~/Downloads/arch-linux-setup/dotfiles/console/vconsole.conf /etc/vconsole.conf
     setfont ter-u22n
-echo ""
-
-echo ">>> Configuring Grub..."
-    cp -r ~/Downloads/arch-linux-setup/Backgrounds/* ~/Backgrounds/
-    sudo mv /etc/default/grub /etc/default/grub.backup
-    sudo cp ~/Downloads/arch-linux-setup/dotfiles/grub/grub /etc/default/grub
-    sudo grub-mkconfig -o /boot/grub/grub.cfg
 echo ""
 
 echo ">>> Copying config files..."
