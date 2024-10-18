@@ -30,7 +30,7 @@ echo ">>> Configuring Grub..."
     cp -r ~/Downloads/arch-linux-setup/Backgrounds/* ~/Backgrounds/
     sudo mv /etc/default/grub /etc/default/grub.backup
     sudo cp ~/Downloads/arch-linux-setup/dotfiles/grub/grub /etc/default/grub
-    sudo grub-mkconfig -o /etc/default/grub
+    sudo grub-mkconfig -o /boot/grub/grub.cfg
 echo ""
 
 echo ">>> Copying config files..."
