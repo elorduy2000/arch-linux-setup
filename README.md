@@ -6,7 +6,7 @@
 ## ARCH LINUX SETUP
 ### _( Arch Linux + Hyprland )_
 
-#### Install Arch Linux 
+### 🚀 Install Arch Linux 
 - Referencias:
 	- https://wiki.archlinux.org/title/Installation_guide
     - https://archlinux.org/download/
@@ -41,7 +41,7 @@
         | **Networking** | Copy of ISO |
         | **Timezone** | America/Bogota |
 
-	- 🚀 Install and relax (Have a cup of coffee ☕)
+	- Install and relax (Have a cup of coffee ☕)
 		- When the installation proccess was finished, restart the machine executing the following commands:
             ```sh
             exit
@@ -108,7 +108,9 @@
 ---
 ---
 
-RICING HERE!!!
+### 🌾 Ricing the system
+
+
 
 ---
 ---

@@ -43,7 +43,7 @@ GRUB_DISABLE_RECOVERY=true
 #GRUB_COLOR_HIGHLIGHT="light-cyan/blue"
 
 # Uncomment one of them for the gfx desired, a image background or a gfxtheme
-GRUB_BACKGROUND="/home/resilente/Backgrounds/arch_linux_01.jpg"
+GRUB_BACKGROUND="~/Backgrounds/arch_linux_01.jpg"
 #GRUB_THEME="/path/to/gfxtheme"
 
 # Uncomment to get a beep at GRUB start
