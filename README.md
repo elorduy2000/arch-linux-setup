@@ -28,18 +28,24 @@
 	- 🛠️ Configure the following options:
         |          |         |
         | -------- | ------- |
-        | **Language** | English |
-        | **Mirrors** | Not select anything |
-        | **Locale** | es |
-        | **Disk** | Use best effort >> File System: btrfs  >> Compression: yes |
-        | **Root password** | Set password for the root user |
-        | **Add user** | Set name user >> Set password user >> Add as admin: yes |
+        | **Arch install language** | English (100%) |
+        | **Mirrors** | Left blank |
+        | **Locales** | Keyboard layaout: es >> Locale language: en_US >> Locale encoding: UTF8 |
+        | **Disk configuration** | Partitioning: Use a best-effort default partition layout >> Select disk >> Select file System: btrfs  >> BTRFS default volume structure: yes >> Use compression: yes |
+		| **Disk encryption** | Left blank |
         | **Bootloader** | Grub |
-        | **Profile** | Type: Hyperland >> Hardware communication: Polkitd >> Graphics: AMD >> Grreeter: sddm |
+		| **Swap** | True |
+		| **Hostname** | archlinux |		
+        | **Root password** | Enter root password >> Re-enter password |
+        | **User account** | Add a user >> Enter username >> Password for user >> Re-enter password >> Add user as superuser (sudo): yes >> Confirm and exit |
+        | **Profile** | Type: Desktop >> Select Hyprland >> Select option to Hyprland access hardware devices: Polkitd >> Graphic drivers: AMD/ATI (open source) >> Grreeter: sddm |
         | **Audio** | Pipewire |
+		| **Kernels** | linux |
         | **Additional packages** | micro git |
-        | **Networking** | Copy of ISO |
+        | **Network configuration** | Copy ISO network configuration to installation |
         | **Timezone** | America/Bogota |
+		| **Automatic time sync (NTP)** | True |
+		| **Optional repositories** | Left blank |
 
 	- Install and relax (Have a cup of coffee ☕)
 		- When the installation proccess was finished, restart the machine executing the following commands:
