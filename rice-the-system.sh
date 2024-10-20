@@ -67,7 +67,7 @@ echo ">>> Copying user configuration files..."
     mv ~/.config/hypr/hyprland.conf ~/.config/hypr/hyprland.conf.backup
 
     # dotfiles
-    cp -r ~/Downloads/arch-linux-setup/.config/* ~/.config/
+    cp -r ~/Downloads/arch-linux-setup/dotfiles/.config/* ~/.config/
 echo ""
 
 echo ""
