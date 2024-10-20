@@ -1,6 +1,6 @@
 #!/bin/bash
 
-current="00_current.jpg"
+current="00-current.jpg"
 path="~/Wallpapers/"
 current_path="$path$current"
 
