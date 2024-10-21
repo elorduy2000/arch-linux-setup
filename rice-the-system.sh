@@ -59,7 +59,9 @@ echo ">>> Ricing hyprland..."
     sudo pacman -S --noconfirm --needed kitty
     sudo pacman -S --noconfirm --needed rofi
     sudo pacman -S --noconfirm --needed swww
-    sudo pacman -S --noconfirm --needed python-pywal
+    sudo pacman -S --noconfirm --needed waybar
+    sudo pacman -S --noconfirm --needed wlogout
+    sudo pacman -S --noconfirm --needed python-pywal16    
 echo ""
 
 echo ">>> Copying user configuration files..."
