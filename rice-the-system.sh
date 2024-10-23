@@ -57,7 +57,7 @@ echo ""
 
 echo ">>> Ricing hyprland..."
     sudo pacman -S --noconfirm --needed kitty
-    sudo pacman -S --noconfirm --needed rofi
+    sudo pacman -S --noconfirm --needed rofi-wayland
     sudo pacman -S --noconfirm --needed swww
     sudo pacman -S --noconfirm --needed waybar
     sudo pacman -S --noconfirm --needed wlogout
