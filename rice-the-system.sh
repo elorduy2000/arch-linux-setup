@@ -31,19 +31,21 @@ echo ">>> Copying scripts..."
     cp -r ~/Downloads/arch-linux-setup/Scripts/* ~/Scripts/
 echo ""
 
-echo ">>> Ricing console xterm..."
+echo ">>> Ricing console..."
     # Set terminus font
     sudo pacman -S --noconfirm --needed terminus-font
     sudo mv /etc/vconsole.conf /etc/vconsole.conf.backup
     sudo cp ~/Downloads/arch-linux-setup/dotfiles/console/vconsole.conf /etc/vconsole.conf
     setfont ter-u22n
 
+    sudo pacman -S --noconfirm --needed micro
+    sudo pacman -S --noconfirm --needed tldr
     sudo pacman -S --noconfirm --needed fastfetch
+    sudo pacman -S --noconfirm --needed onefetch
     sudo pacman -S --noconfirm --needed btop
     sudo pacman -S --noconfirm --needed htop 
     sudo pacman -S --noconfirm --needed fzf 
-    sudo pacman -S --noconfirm --needed yazi 
-    sudo pacman -S --noconfirm --needed tldr
+    sudo pacman -S --noconfirm --needed yazi     
 echo ""
 
 echo ">>> Ricing bash..."
@@ -55,14 +57,25 @@ echo ">>> Ricing bash..."
     cp ~/Downloads/arch-linux-setup/dotfiles/bash/.bashrc ~/.bashrc
 echo ""
 
+echo ">>> Enabling user repositories..."
+    # paru
+    sudo pacman -S --needed base-devel
+    cd ~/Downloads
+    git clone https://aur.archlinux.org/paru.git
+    cd ~/Downloads/paru
+    makepkg -si
+    cd ~
+echo ""
+
 echo ">>> Ricing hyprland..."
-    sudo pacman -S --noconfirm --needed kitty
     sudo pacman -S --noconfirm --needed rofi-wayland
     sudo pacman -S --noconfirm --needed swww
     sudo pacman -S --noconfirm --needed waybar
     sudo pacman -S --noconfirm --needed wlogout
-    #sudo pacman -S --noconfirm --needed python-pywal16 (depende de paru)
-    sudo pacman -S --noconfirm --needed python-pywal
+
+    #sudo pacman -S --noconfirm --needed python-pywal
+    paru -S --noconfirm --needed python-pywal16
+    paru -S --noconfirm --needed wezterm-git
 echo ""
 
 echo ">>> Copying user configuration files..."
