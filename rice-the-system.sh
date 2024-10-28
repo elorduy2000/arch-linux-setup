@@ -1,5 +1,16 @@
 #!/bin/bash
 
+function confirm() {
+    while true; do
+        read -p "Stop execution? (y/N) " yn
+        case $yn in
+            [Yy]* ) return 0;;
+            [Nn]* ) return 1;;
+            * ) echo "Please answer 'y' or 'n'";;
+        esac
+    done
+}
+
 echo ""
 echo "_______  ______ _______ _     _     _      _____ __   _ _     _ _     _      _______ _______ _______ _     _  _____ "
 echo "|_____| |_____/ |       |_____|     |        |   | \  | |     |  \___/       |______ |______    |    |     | |_____]"
@@ -39,6 +50,11 @@ echo ">>> Ricing sddm..."
     # theme
     sudo cp -r ~/Downloads/arch-linux-setup/dotfiles/sddm/themes/chili/* ~/usr/share/sddm/themes/
 echo ""
+if confirm; then
+    exit
+fi
+
+
 
 echo ">>> Ricing console..."
     # Set terminus font
