@@ -37,7 +37,7 @@ echo ">>> Ricing sddm..."
     sudo cp ~/Downloads/arch-linux-setup/dotfiles/sddm/default.conf /usr/lib/sddm/sddm.conf.d/default.conf
 
     # theme
-    sudo cp -r ~/Downloads/arch-linux-setup/dotfiles/sddm/themes/chili/* ~//usr/share/sddm/themes/
+    sudo cp -r ~/Downloads/arch-linux-setup/dotfiles/sddm/themes/chili/* ~/usr/share/sddm/themes/
 echo ""
 
 echo ">>> Ricing console..."
