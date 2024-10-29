@@ -68,6 +68,7 @@ echo ">>> Enabling user repositories..."
 echo ""
 
 echo ">>> Ricing hyprland..."
+    sudo pacman -S --noconfirm --needed wezterm
     sudo pacman -S --noconfirm --needed rofi-wayland
     sudo pacman -S --noconfirm --needed swww
     sudo pacman -S --noconfirm --needed waybar
@@ -75,7 +76,6 @@ echo ">>> Ricing hyprland..."
 
     #sudo pacman -S --noconfirm --needed python-pywal
     paru -S --noconfirm --needed python-pywal16
-    paru -S --noconfirm --needed wezterm-git
 echo ""
 
 echo ">>> Copying user configuration files..."
