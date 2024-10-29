@@ -11,6 +11,7 @@ alias ll="eza -lha"
 alias tree="tree -C"
 alias cdhome="cd ~"
 alias w='/~/Scripts/randomize-wallpaper.sh'
+alias fastfetch='fastfetch -c /usr/share/fastfetch/presets/resilente.jsonc'
 
 PS1='[\u@\h \W]\$ '
 

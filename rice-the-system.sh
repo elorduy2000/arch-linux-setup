@@ -64,7 +64,10 @@ echo ">>> Ricing console..."
 
     sudo pacman -S --noconfirm --needed micro
     sudo pacman -S --noconfirm --needed tldr
+
     sudo pacman -S --noconfirm --needed fastfetch
+    sudo cp ~/Downloads/arch-linux-setup/dotfiles/fastfetch/resilente.jsonc /usr/share/fastfetch/presets/resilente.jsonc
+
     sudo pacman -S --noconfirm --needed onefetch
     sudo pacman -S --noconfirm --needed btop
     sudo pacman -S --noconfirm --needed htop 
