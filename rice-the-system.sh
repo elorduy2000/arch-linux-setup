@@ -31,6 +31,15 @@ echo ">>> Copying scripts..."
     cp -r ~/Downloads/arch-linux-setup/Scripts/* ~/Scripts/
 echo ""
 
+echo ">>> Ricing sddm..."
+    # configuration
+    sudo mv /usr/lib/sddm/sddm.conf.d/default.conf /usr/lib/sddm/sddm.conf.d/default.conf.backup
+    sudo cp ~/Downloads/arch-linux-setup/dotfiles/sddm/default.conf /usr/lib/sddm/sddm.conf.d/default.conf
+
+    # theme
+    sudo cp -r ~/Downloads/arch-linux-setup/dotfiles/sddm/themes/chili/* ~//usr/share/sddm/themes/
+echo ""
+
 echo ">>> Ricing console..."
     # Set terminus font
     sudo pacman -S --noconfirm --needed terminus-font
