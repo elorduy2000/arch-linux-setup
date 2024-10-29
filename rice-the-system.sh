@@ -48,13 +48,8 @@ echo ">>> Ricing sddm..."
     sudo cp ~/Downloads/arch-linux-setup/dotfiles/sddm/default.conf /usr/lib/sddm/sddm.conf.d/default.conf
 
     # theme
-    sudo cp -r ~/Downloads/arch-linux-setup/dotfiles/sddm/themes/chili/* ~/usr/share/sddm/themes/
+    sudo cp -r ~/Downloads/arch-linux-setup/dotfiles/sddm/themes/chili/* /usr/share/sddm/themes/
 echo ""
-if confirm; then
-    exit
-fi
-
-
 
 echo ">>> Ricing console..."
     # Set terminus font
@@ -91,6 +86,10 @@ echo ">>> Enabling user repositories..."
     makepkg -si
     cd ~
 echo ""
+
+if confirm; then
+    exit
+fi
 
 echo ">>> Ricing hyprland..."
     sudo pacman -S --noconfirm --needed wezterm
