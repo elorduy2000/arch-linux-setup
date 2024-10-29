@@ -11,6 +11,10 @@ function confirm() {
     done
 }
 
+#if confirm; then
+#    exit
+#fi
+
 echo ""
 echo "_______  ______ _______ _     _     _      _____ __   _ _     _ _     _      _______ _______ _______ _     _  _____ "
 echo "|_____| |_____/ |       |_____|     |        |   | \  | |     |  \___/       |______ |______    |    |     | |_____]"
@@ -48,7 +52,7 @@ echo ">>> Ricing sddm..."
     sudo cp ~/Downloads/arch-linux-setup/dotfiles/sddm/default.conf /usr/lib/sddm/sddm.conf.d/default.conf
 
     # theme
-    sudo cp -r ~/Downloads/arch-linux-setup/dotfiles/sddm/themes/chili/* /usr/share/sddm/themes/
+    sudo cp -r ~/Downloads/arch-linux-setup/dotfiles/sddm/themes/* /usr/share/sddm/themes/
 echo ""
 
 echo ">>> Ricing console..."
@@ -86,10 +90,6 @@ echo ">>> Enabling user repositories..."
     makepkg -si
     cd ~
 echo ""
-
-if confirm; then
-    exit
-fi
 
 echo ">>> Ricing hyprland..."
     sudo pacman -S --noconfirm --needed wezterm
