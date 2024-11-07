@@ -103,6 +103,7 @@ echo ">>> Ricing hyprland..."
 
     #sudo pacman -S --noconfirm --needed python-pywal
     paru -S --noconfirm --needed python-pywal16
+    #paru -S --noconfirm --needed wezterm-git
 echo ""
 
 echo ">>> Copying user configuration files..."
