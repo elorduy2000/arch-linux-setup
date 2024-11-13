@@ -73,6 +73,7 @@ echo ">>> Ricing console..."
     sudo pacman -S --noconfirm --needed htop 
     sudo pacman -S --noconfirm --needed fzf 
     sudo pacman -S --noconfirm --needed yazi     
+    sudo pacman -S --noconfirm --needed duf   
 echo ""
 
 echo ">>> Ricing bash..."
@@ -95,15 +96,12 @@ echo ">>> Enabling user repositories..."
 echo ""
 
 echo ">>> Ricing hyprland..."
-    sudo pacman -S --noconfirm --needed wezterm
     sudo pacman -S --noconfirm --needed rofi-wayland
     sudo pacman -S --noconfirm --needed swww
     sudo pacman -S --noconfirm --needed waybar
     sudo pacman -S --noconfirm --needed wlogout
-
-    #sudo pacman -S --noconfirm --needed python-pywal
     paru -S --noconfirm --needed python-pywal16
-    #paru -S --noconfirm --needed wezterm-git
+    paru -S --noconfirm --needed wezterm-git
 echo ""
 
 echo ">>> Copying user configuration files..."
@@ -112,6 +110,14 @@ echo ">>> Copying user configuration files..."
 
     # dotfiles
     cp -r ~/Downloads/arch-linux-setup/dotfiles/.config/* ~/.config/
+echo ""
+
+echo ">>> Installing applications..."
+	sudo pacman -S --noconfirm --needed dolphin
+	sudo pacman -S --noconfirm --needed nwg-look	
+	sudo pacman -S --noconfirm --needed vivaldi
+	sudo pacman -S --noconfirm --needed vlc
+	sudo pacman -S --noconfirm --needed libreoffice-still
 echo ""
 
 echo ""
