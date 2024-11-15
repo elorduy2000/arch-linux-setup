@@ -78,7 +78,6 @@ echo ""
 
 echo ">>> Ricing bash..."
     sudo pacman -S --noconfirm --needed tree
-    sudo pacman -S --noconfirm --needed eza
     sudo pacman -S --noconfirm --needed starship
 
     mv ~/.bashrc ~/.bashrc.backup
@@ -102,6 +101,7 @@ echo ">>> Ricing hyprland..."
     sudo pacman -S --noconfirm --needed wlogout
     paru -S --noconfirm --needed python-pywal16
     paru -S --noconfirm --needed wezterm-git
+    paru -S --noconfirm --needed gols
 echo ""
 
 echo ">>> Copying user configuration files..."
