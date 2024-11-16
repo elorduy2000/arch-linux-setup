@@ -1,0 +1,12 @@
+services:
+  wikidocs:
+    container_name: wikidocs
+    image: zavy86/wikidocs
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+    ports:
+      - ${PORT}:80
+    restart: unless-stopped
+    volumes:
+      - ${APP_DATA}/data:/datasets

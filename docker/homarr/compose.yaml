@@ -1,0 +1,12 @@
+services:
+  homarr:
+    container_name: homarr
+    image: ghcr.io/ajnart/homarr:latest
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock # Optional, only if you want docker integration
+      - ${APP_DATA}/configs:/app/data/configs
+      - ${APP_DATA}/icons:/app/public/icons
+      - ${APP_DATA}/data:/data
+    ports:
+      - '${PORT}:7575'
