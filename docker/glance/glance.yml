@@ -43,7 +43,61 @@ pages:
         widgets:
           - type: weather
             location: Puerto Colombia, Colombia
-             
+
+  - name: News
+    columns:
+      - size: full
+        widgets:
+          - type: rss
+            title: techradar
+            style: horizontal-cards
+            feeds:
+              - url: https://www.techradar.com/feeds.xml
+
+          - type: rss
+            title: gizmodo
+            style: horizontal-cards
+            feeds:
+              - url: https://gizmodo.com/feed
+
+          - type: rss
+            title: computerworld
+            style: horizontal-cards
+            feeds:
+              - url: https://www.computerworld.com/feed/
+
+          - type: rss
+            title: mit technology review
+            style: horizontal-cards
+            feeds:
+              - url: https://www.technologyreview.com/feed/
+                
+      - size: small
+        widgets:
+          - type: rss
+            title: zdnet - latest news
+            style: vertical-cards
+            collapse-after: 3
+            feeds:
+              - url: https://www.zdnet.com/news/rss.xml
+                title: latest news
+
+          - type: rss
+            title: zdnet - linux
+            style: vertical-cards
+            collapse-after: 3
+            feeds:
+              - url: https://www.zdnet.com/topic/linux/rss.xml
+                title: linux
+
+          - type: rss
+            title: zdnet - open source
+            style: vertical-cards
+            collapse-after: 3
+            feeds:
+              - url: https://www.zdnet.com/topic/open-source/rss.xml
+                title: open source         
+                             
   - name: Home
     columns:
       - size: small
