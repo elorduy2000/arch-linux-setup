@@ -44,6 +44,13 @@ pages:
           - type: weather
             location: Puerto Colombia, Colombia
 
+          - type: rss
+            title: hacker news
+            style: vertical-cards
+            collapse-after: 3
+            feeds:
+              - url: https://news.ycombinator.com/rss
+
   - name: News
     columns:
       - size: full
@@ -73,7 +80,7 @@ pages:
               - url: https://www.technologyreview.com/feed/
                 
       - size: small
-        widgets:
+        widgets:                   
           - type: rss
             title: zdnet - latest news
             style: vertical-cards
@@ -104,19 +111,6 @@ pages:
         widgets:
           - type: calendar
 
-          - type: rss
-            limit: 10
-            collapse-after: 3
-            cache: 3h
-            feeds:
-              - url: https://ciechanow.ski/atom.xml
-              - url: https://www.joshwcomeau.com/rss.xml
-                title: Josh Comeau
-              - url: https://samwho.dev/rss.xml
-              - url: https://awesomekling.github.io/feed.xml
-              - url: https://ishadeed.com/feed.xml
-                title: Ahmad Shadeed
-
           - type: twitch-channels
             channels:
               - theprimeagen
@@ -127,19 +121,6 @@ pages:
               - jembawls
 
       - size: full
-        widgets:
-          - type: hacker-news
-
-          - type: videos
-            channels:
-              - UCR-DXc1voovS8nhAvccRZhg # Jeff Geerling
-              - UCv6J_jJa8GJqFwQNgNrMuww # ServeTheHome
-              - UCOk-gHyjcWZNj3Br4oxwh0A # Techno Tim
-
-          - type: reddit
-            subreddit: selfhosted
-
-      - size: small
         widgets:
           - type: weather
             location: London, United Kingdom
